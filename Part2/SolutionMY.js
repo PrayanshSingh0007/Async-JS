@@ -1,3 +1,12 @@
+/**
+ * Implement a set of dummy functions which can mimic the behavior of the following functions:
+ * 1. download -> This function should mimic downloading of somecontent from a url
+ * 2. writeFile -> This function should mimic writing of some content to a file
+ * 3. upload -> This function should mimic uploading the file to a server
+ * 
+ * Now after you've implemented these functions, try to use them in a scenario where we first
+ * download a file, then write it to a disk and then upload it to a server. 
+ */
 
 function downloadfile(url, callback) {
     console.log(`Downloading file from ${url}`);
@@ -39,6 +48,4 @@ downloadfile('http://www.google.com/logo.png'), (file) => {
         uploadFile(file, (uploadedFile) => {
             console.log(`Done with file: ${uploadedFile}`);
         });
-    })}  
-    
-
+    })};
